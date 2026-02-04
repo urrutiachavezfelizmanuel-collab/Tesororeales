@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Tesoros Reales - Donde tus logros en Minecraft se convierten en premios reales.">
+    <title>Tesoros Reales | El Servidor que Paga</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        :root {
+            --oro: #ffcc00;
+            --oscuro: #121212;
+            --gris: #1e1e1e;
+            --verde: #2ecc71;
+        }
+
+        body {
+            background-color: var(--oscuro);
+            color: white;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url('./images/castillo_minecraft.jpg');
+            background-size: cover;
+            background-position: center;
+            padding: 60px 20px;
+            text-align: center;
+            border-bottom: 3px solid var(--oro);
+        }
+
+        .logo { font-size: 3em; font-weight: bold; color: var(--oro); text-shadow: 2px 2px 10px rgba(0,0,0,0.5); }
+
+        nav {
+            background: var(--gris);
+            padding: 15px;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        nav a { color: white; margin: 0 15px; text-decoration: none; font-weight: bold; transition: 0.3s; }
+        nav a:hover { color: var(--oro); }
+
+        .container { max-width: 1000px; margin: auto; padding: 20px; }
+
+        /* Muro de Pagos */
+        .pago-card {
+            background: #ffffff10;
+            border-left: 5px solid var(--verde);
+            padding: 15px;
+            margin: 10px 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-radius: 5px;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+
+        /* Tabla de Tesoros */
+        table { width: 100%; border-collapse: collapse; margin-top: 20px; background: var(--gris); }
+        th, td { padding: 15px; text-align: left; border-bottom: 1px solid #333; }
+        th { background: var(--oro); color: black; }
+
+        .btn-social {
+            padding: 15px 25px;
+            border-radius: 5px;
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            display: inline-block;
+            margin: 10px;
+        }
+        .whatsapp { background: #25d366; }
+        .discord { background: #7289da; }
+        .telegram { background: #0088cc; }
+
+        /* Pequeñas mejoras responsivas */
+        @media (max-width: 600px) {
+            .logo { font-size: 2em; }
+            .pago-card { flex-direction: column; align-items: flex-start; }
+            th, td { padding: 10px; }
+        }
+    </style>
+</head>
+<body>
+
+<nav aria-label="Navegación principal">
+    <a href="#inicio">INICIO</a>
+    <a href="#tesoros">TABLA DE TESOROS</a>
+    <a href="#pagos">PAGOS REALIZADOS</a>
+    <a href="#contacto">CONTACTO</a>
+</nav>
+
+<header id="inicio">
+    <div class="logo">⚔️ TESOROS REALES ⚔️</div>
+    <p>¡Donde tus logros en Minecraft se convierten en dinero real!</p>
+</header>
+
+<div class="container" id="pagos">
+    <h2><i class="fas fa-receipt"></i> Muro de Pagos Recientes</h2>
+    <div class="pago-card">
+        <div><strong>Jugador:</strong> AlexPro22</div>
+        <div><strong>Premio:</strong> 10 USDT</div>
+        <div style="color: var(--verde);">✓ Transacción Confirmada</div>
+    </div>
+    <div class="pago-card">
+        <div><strong>Jugador:</strong> MinerKing</div>
+        <div><strong>Premio:</strong> Zapatos Nike (Ticket #88)</div>
+        <div style="color: var(--verde);">✓ Enviado por Amazon</div>
+    </div>
+</div>
+
+<div class="container" id="tesoros">
+    <h2><i class="fas fa-trophy"></i> Tabla de Tesoros Disponibles</h2>
+    <table>
+        <tr>
+            <th>Rareza</th>
+            <th>Objeto en Juego</th>
+            <th>Premio Real</th>
+            <th>Estado</th>
+        </tr>
+        <tr>
+            <td>Legendario</td>
+            <td>Huevo de Dragón</td>
+            <td>Smart TV 43"</td>
+            <td>Oculto...</td>
+        </tr>
+        <tr>
+            <td>Épico</td>
+            <td>Netherite Ingot</td>
+            <td>10 USDT</td>
+            <td>¡DISPONIBLE!</td>
+        </tr>
+    </table>
+</div>
+
+<div class="container" id="contacto" style="text-align: center;">
+    <h2>¿Encontraste un Tesoro? Canjea aquí:</h2>
+    <!-- Reemplaza los valores marcados (TUNUMERO, TU_LINK_DISCORD, TU_USUARIO) por los reales -->
+    <a href="https://wa.me/TUNUMERO" class="btn-social whatsapp" target="_blank" rel="noopener noreferrer"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+    <a href="TU_LINK_DISCORD" class="btn-social discord" target="_blank" rel="noopener noreferrer"><i class="fab fa-discord"></i> Discord</a>
+    <a href="https://t.me/TU_USUARIO" class="btn-social telegram" target="_blank" rel="noopener noreferrer"><i class="fab fa-telegram"></i> Telegram</a>
+</div>
+
+</body>
+</html>
