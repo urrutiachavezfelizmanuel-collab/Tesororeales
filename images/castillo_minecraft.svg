@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1920" height="1080" viewBox="0 0 1920 1080" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="g" x1="0" x2="0" y1="0" y2="1">
+      <stop offset="0" stop-color="#101010"/>
+      <stop offset="1" stop-color="#1b1b1b"/>
+    </linearGradient>
+  </defs>
+  <rect width="100%" height="100%" fill="url(#g)"/>
+  <!-- montañas / murallas -->
+  <g fill="#222" opacity="0.95">
+    <path d="M0 700 L300 480 L600 700 Z"/>
+    <path d="M400 700 L700 460 L980 700 Z"/>
+    <path d="M900 700 L1180 430 L1440 700 Z"/>
+    <path d="M1300 700 L1600 500 L1920 700 Z"/>
+  </g>
+  <!-- torre de castillo simplificada -->
+  <g transform="translate(660,300) scale(1.1)" fill="#111">
+    <rect x="120" y="120" width="220" height="340" rx="6" />
+    <rect x="160" y="40" width="140" height="120" rx="4" fill="#0f0f0f"/>
+    <path d="M120 120 L110 90 L120 80 L140 90 L160 80 L180 90 L200 80 L220 90 L240 80 L260 90 L340 120 Z" fill="#0d0d0d"/>
+    <rect x="180" y="220" width="40" height="80" fill="#222"/>
+    <rect x="260" y="220" width="40" height="80" fill="#222"/>
+  </g>
+  <!-- luz tenue -->
+  <radialGradient id="r" cx="70%" cy="15%" r="40%">
+    <stop offset="0" stop-color="#2a2a2a" stop-opacity="0.2"/>
+    <stop offset="1" stop-color="#000" stop-opacity="0"/>
+  </radialGradient>
+  <rect width="100%" height="100%" fill="url(#r)"/>
+</svg>
